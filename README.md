@@ -1,6 +1,6 @@
 <div align="center">
 <a href="http://camma.u-strasbg.fr/">
-<img src="static/camma_logo_tr.png" width="30%">
+<img src="camma_logo_tr.png" width="30%">
 </a>
 </div>
 
