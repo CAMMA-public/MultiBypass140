@@ -1,0 +1,15 @@
+id, name
+0, preparation
+1, gastric_pouch_creation
+2, omentum_division
+3, gastrojejunal_anastomosis
+4, anastomosis_test
+5, jejunal_separation
+6, closure_petersen_space
+7, jejunojejunal_anastomosis
+8, closure_mesenteric_defect
+9, cleaning_coagulation
+10, disassembling
+11, other_intervention
+12, out_of_body
+13, severe_index

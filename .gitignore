@@ -1,0 +1,10 @@
+*.DS_Store
+datasets/
+datasets/*
+**__pycache__**
+**/frames
+**/frames/**
+models/
+models/*
+mvenv/
+mvenv/*
