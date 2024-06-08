@@ -9,9 +9,9 @@
 ------------------------------------------------------
 **Challenges in Multi-centric Generalization: Phase and Step Recognition in Roux-en-Y Gastric Bypass Surgery**
 
-*Joel L. Lavanchy, Sanat Ramesh, Diego Dall’Alba, Cristians Gonzalez, Paolo Fiorini, Beat P. Muller-Stich, Philipp C. Nett, Jacques Marescaux, Didier Mutter, Nicolas Padoy, 2023*
+*Joel L. Lavanchy, Sanat Ramesh, Diego Dall’Alba, Cristians Gonzalez, Paolo Fiorini, Beat P. Muller-Stich, Philipp C. Nett, Jacques Marescaux, Didier Mutter, Nicolas Padoy, 2024*
 
-[![arXiv](https://img.shields.io/badge/arxiv-2312.11250-red)](https://arxiv.org/abs/2312.11250)
+[![arXiv](https://img.shields.io/badge/arxiv-2312.11250-red)](https://arxiv.org/abs/2312.11250) [![IJCARS](https://img.shields.io/badge/IJCARS-2024-orange)](https://link.springer.com/article/10.1007/s11548-024-03166-3)
 
 
 MultiBypass140 is a multicentric dataset of endoscopic video of laparoscopic Roux-en-Y gastric bypass surgery introduced to facilitate research on multi-level surgical activity recognition, specifically phases and steps.
@@ -321,13 +321,16 @@ Example command to evaluate all the experiments and collect the results
 ## Citation
 
 ```bibtex
-@article{Lavanchy2023MultiBypass140,
-  doi = {10.48550/ARXIV.2312.11250},
-  url = {https://arxiv.org/abs/2312.11250},
-  author = {Lavanchy,  Joel L. and Ramesh,  Sanat and Dall'Alba,  Diego and Gonzalez,  Cristians and Fiorini,  Paolo and Muller-Stich,  Beat and Nett,  Philipp C. and Marescaux,  Jacques and Mutter,  Didier and Padoy,  Nicolas},
-  title = {Challenges in Multi-centric Generalization: Phase and Step Recognition in Roux-en-Y Gastric Bypass Surgery},
-  publisher = {arXiv},
-  year = {2023},
+@article{Lavanchy2024,
+  title = {Challenges in multi-centric generalization: phase and step recognition in Roux-en-Y gastric bypass surgery},
+  ISSN = {1861-6429},
+  url = {http://dx.doi.org/10.1007/s11548-024-03166-3},
+  DOI = {10.1007/s11548-024-03166-3},
+  journal = {International Journal of Computer Assisted Radiology and Surgery},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Lavanchy,  Joël L. and Ramesh,  Sanat and Dall’Alba,  Diego and Gonzalez,  Cristians and Fiorini,  Paolo and M\"{u}ller-Stich,  Beat P. and Nett,  Philipp C. and Marescaux,  Jacques and Mutter,  Didier and Padoy,  Nicolas},
+  year = {2024},
+  month = may 
 }
 ```
 
