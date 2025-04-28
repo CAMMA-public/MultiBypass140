@@ -14,14 +14,15 @@
 [![arXiv](https://img.shields.io/badge/arxiv-2312.11250-red)](https://arxiv.org/abs/2312.11250) [![IJCARS](https://img.shields.io/badge/IJCARS-2024-orange)](https://link.springer.com/article/10.1007/s11548-024-03166-3)
 
 
-MultiBypass140 is a multicentric dataset of endoscopic video of laparoscopic Roux-en-Y gastric bypass surgery introduced to facilitate research on multi-level surgical activity recognition, specifically phases and steps.
+MultiBypass140 is a multicentric dataset of endoscopic video of laparoscopic Roux-en-Y gastric bypass surgery introduced to facilitate research on multi-level surgical activity recognition, specifically phases, steps and interaoperative adverse events (IAEs).
 
 ## News: 
 - [ **20/12/2023** ]: Release of the dataset.
+- [ **29/04/2025** ]: IAE annotations integrated within the dataset.
 
 ### Introduction
 <div style="text-align: left">
-To facilitate research on multi-centric surgical activity recognition at multiple levels of granularity, specifically phases and steps, we introduce a large multi-centric multi-activity dataset consisting of 140 surgical videos (MultiBypass140) of laparoscopic Roux-en-Y gastric bypass (LRYGB) surgeries performed at two medical centers, i.e., the University Hospital of Strasbourg, France (StrasBypass70) and Inselspital, Bern University Hospital, Switzerland (BernBypass70). The dataset has been fully annotated by two board-certified surgeons with an ontology consisting of 12 phases and 46 steps. <a href="https://arxiv.org/abs/2312.11250">Lavanchy2023MultiBypass140</a> provides benchmarks for several baseline methods on the official dataset splits.
+To facilitate research on multi-centric surgical activity recognition at multiple levels of granularity, specifically phases and steps, we introduce a large multi-centric multi-activity dataset consisting of 140 surgical videos (MultiBypass140) of laparoscopic Roux-en-Y gastric bypass (LRYGB) surgeries performed at two medical centers, i.e., the University Hospital of Strasbourg, France (StrasBypass70) and Inselspital, Bern University Hospital, Switzerland (BernBypass70). The dataset has been fully annotated by two board-certified surgeons with an ontology consisting of 12 phases, 46 steps and 5 IAEs (with 5 scale of severity). <a href="https://arxiv.org/abs/2312.11250">Lavanchy2023MultiBypass140</a> provides benchmarks for several baseline methods on the official dataset splits.
 </div>
 
 
@@ -37,6 +38,7 @@ To facilitate research on multi-centric surgical activity recognition at multipl
 - 140 LRYGB surgical videos from two centers.
 - 5 fold cross-validation metadata (train, validation, and test sets) defining the official splits of the dataset, which consists of images extracted at 1 fps.
 - Training pipelines for baseline spatial and temporal models (CNN, CNN + LSTM, CNN + TCN) described in [Lavanchy2023MultiBypass140](https://arxiv.org/abs/2312.11250).
+- The IAE categories include bleeding, mechanical injury, thermal injury, ischmic injury and insufficient closure of anastomosis. The severity of the events in the range of 1 - 5, with 0 for "no IAE".
 
 # Get Started
 
@@ -57,6 +59,8 @@ Follow these steps for MultiBypass140 dataset preparation and setting up trainin
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass03.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass04.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass05.zip
+## If you wish to also utilize the IAE labels, run:
+> wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass06.zip
 # Unzip all the videos
 > unzip multibypass*.zip
 # 3. Setup dataset for training
@@ -333,6 +337,18 @@ Example command to evaluate all the experiments and collect the results
   month = may 
 }
 ```
+
+If you used the IAE annotations, please cite:
+
+```bibtex
+@article{bose2025feature,
+  title={Feature Mixing Approach for Detecting Intraoperative Adverse Events in Laparoscopic Roux-en-Y Gastric Bypass Surgery},
+  author={Bose, Rupak and Nwoye, Chinedu Innocent and Lazo, Jorge and Lavanchy, Jo{\"e}l Lukas and Padoy, Nicolas},
+  journal={arXiv preprint arXiv:2504.16749},
+  year={2025}
+}
+```
+
 
 
 
