@@ -96,15 +96,21 @@ $MBy140
     │   └── labels/
     │       ├── train/
     │       │   ├── 1fps_100_0.pickle
+    │       │   ├── 1fps_100_0_with_iae.pickle
     │       │   ├── 1fps_100_1.pickle
+    │       │   ├── 1fps_100_1_with_iae.pickle
     │       │   └── ...
     │       ├── val/
     │       │   ├── 1fps_0.pickle
+    │       │   ├── 1fps_0_with_iae.pickle
     │       │   ├── 1fps_1.pickle
+    │       │   ├── 1fps_1_with_iae.pickle
     │       │   └── ...
     │       └── test/
     │           ├── 1fps_0.pickle
-    │           ├── 1fps_1.pickle
+    │       │   ├── 1fps_0_with_iae.pickle
+    │       │   ├── 1fps_1.pickle
+    │       │   ├── 1fps_1_with_iae.pickle
     │           └── ...
     └── bern/labels_by70_splits
         ├── frames
@@ -119,15 +125,21 @@ $MBy140
         └── labels/
             ├── train/
             │   ├── 1fps_100_0.pickle
+            │   ├── 1fps_100_0_with_iae.pickle
             │   ├── 1fps_100_1.pickle
+            │   ├── 1fps_100_1_with_iae.pickle
             │   └── ...
             ├── val/
             │   ├── 1fps_0.pickle
+            │   ├── 1fps_0_with_iae.pickle
             │   ├── 1fps_1.pickle
+            │   ├── 1fps_1_with_iae.pickle
             │   └── ...
             └── test/
                 ├── 1fps_0.pickle
+                ├── 1fps_0_with_iae.pickle
                 ├── 1fps_1.pickle
+                ├── 1fps_1_with_iae.pickle
                 └── ...
 ``` 
 
