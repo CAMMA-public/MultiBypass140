@@ -16,9 +16,13 @@
 
 MultiBypass140 is a multicentric dataset of endoscopic video of laparoscopic Roux-en-Y gastric bypass surgery introduced to facilitate research on multi-level surgical activity recognition, specifically phases, steps and interaoperative adverse events (IAEs).
 
+
+
 ## News: 
-- [ **20/12/2023** ]: Release of the dataset.
-- [ **29/04/2025** ]: IAE annotations integrated within the dataset.
+**+++ Update 03.09.2025 +++: We are currently fixing a discrepancy uncovered in the IAE Labels, due to which they will be unavailable for a short while. We will re-upload the refined IAE labels once this issue is fixed.**  
+
+- [ **29.04.2025** ]: IAE annotations integrated within the dataset.
+- [ **20.12.2023** ]: Release of the dataset.
 
 ### Introduction
 <div style="text-align: left">
@@ -59,8 +63,7 @@ Follow these steps for MultiBypass140 dataset preparation and setting up trainin
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass03.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass04.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass05.zip
-## If you wish to also utilize the IAE labels, run:
-> wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass06.zip
+
 # Unzip all the videos
 > unzip multibypass*.zip
 # 3. Setup dataset for training
