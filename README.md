@@ -80,7 +80,7 @@ Follow these steps for MultiBypass140 dataset preparation and setting up trainin
 > ln -s $MBy140/datasets/StrasBypass70/frames/ frames
 ```
 
-- Directory structure should look as follows.
+- Copy the IAE labels to the ```labels/center/labels_by70_splits/labels``` folder so the final directory structure looks as follows:
 ```shell
 $MBy140
 └── labels
@@ -147,6 +147,24 @@ $MBy140
                 ├── 1fps_1_with_iae.pickle
                 └── ...
 ``` 
+# Data visualisation
+
+You can use the minimal notebook named ```visualise_labels.ipynb``` provided to get started with visualising the labels. For example, you can view the progression of phases, steps, and adverse events like in the examples below:
+
+##### Phase and Step progression:
+<div align="center">
+<a href="http://camma.u-strasbg.fr/">
+<img src="static/phase_step_progression.png" width="100%">
+</a>
+</div>
+
+##### Adverse event (bleeding) progression:
+<div align="center">
+<a href="http://camma.u-strasbg.fr/">
+<img src="static/bleeding_progression.png" width="100%">
+</a>
+</div>
+
 
  # Installation
 You need to have a [Anaconda3](https://www.anaconda.com/products/individual#linux) or [Virtualenv](https://virtualenv.pypa.io/en/latest/installation.html) installed for the setup. We developed the code on the Ubuntu 20.04, Python 3.8, PyTorch 2.0.1, and CUDA 12.0.
