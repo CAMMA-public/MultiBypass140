@@ -20,7 +20,8 @@ MultiBypass140 is a multicentric dataset of endoscopic video of laparoscopic Rou
 
 ## News:  
 
-- [ **03.09.2025** ]: A discrepancy in the surgery IDs of the IAE labels has now been corrected. 
+- [ **19.09.2025** ]: A discrepancy in the frame vs. label numbers of one video (BBP04) was identified, and has now been corrected. 
+- [ **03.09.2025** ]: A discrepancy in the surgery IDs of the IAE labels was identified, and has now been corrected. 
 - [ **29.04.2025** ]: IAE annotations integrated within the dataset.
 - [ **20.12.2023** ]: Release of the dataset.
 
@@ -58,7 +59,7 @@ Follow these steps for MultiBypass140 dataset preparation and setting up trainin
 # 2. Download the dataset:  
 > mkdir datasets && cd datasets
 > mkdir MultiBypass140 && cd MultiBypass140
-> wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass01.zip
+> wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass01_corrected.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass02.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass03.zip
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass04.zip
@@ -67,7 +68,10 @@ Follow these steps for MultiBypass140 dataset preparation and setting up trainin
 > wget https://s3.unistra.fr/camma_public/datasets/MultiBypass140/multibypass06_corrected.zip
 
 # Unzip all the videos
-> unzip multibypass*.zip
+> unzip multibypass01_corrected.zip
+> for z in multibypass{02..05}.zip; do unzip -n "$z" -d .; done
+> unzip multibypass06_corrected.zip
+
 # 3. Setup dataset for training
 > cd $MBy140
 # a) Extract frames at 1 fps (default)
